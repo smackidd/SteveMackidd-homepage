@@ -156,8 +156,8 @@ nav {
 
 .circle2 {
   position: absolute;
-  width: 173px;
-  height: 173px;
+  width: 174px;
+  height: 174px;
 
   /* top: 50%;
   left: 50%; */
@@ -172,6 +172,19 @@ nav {
   position: relative;
   text-align: center;
   top: 45px;
-  color: #02f716;
-  text-shadow: 0 0 5px #02f716, 0 0 10px #02f716;
+  color: #00c3ff;
+  text-shadow: 0 0 5px #b1eafc, 0 0 10px #00c3ff;
+}
+
+.blocks {
+  position: absolute;
+  width: 4px;
+  height: 12px;
+  background: #00c3ff;
+  box-shadow: 0 0 5px #b1eafc, 0 0 10px #b1eafc, 0 0 20px #00c3ff;
+  left: 50%;
+  transform: rotate(calc(18deg * var(--i)));
+  transform-origin: 0 110px;
+  z-index: 15;
+  opacity: 0;
 }
