@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steve Mackidd Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum|Fredoka+One|Heebo:900|Patua+One|Red+Hat+Display|Ubuntu:700|Calistoga&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <nav>
+    <div class="title">
+      <h1>Stephen Mackidd</h1>
+    </div>
+    <ul class="navbar">
+      <li><a href="index.html">home</a></li>
+      <li><a href="/public/about.html">about</a></li>
+      <li><a href="/public/experience.html">experience</a></li>
+      <li><a href="/public/blog.html">blog</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>  
+      <div class="line3"></div>
+    </div>
+    
+  </nav>
+  <div class="home">
+    <div class="glass glassLeft"></div>
+    <div class="glass glassRight"></div>
+    <div class="circle1"></div>
+    <div class="circle2" onclick=openGlass()>
+      <h2 id="clickTxt">Click to Open</h2>
+    </div>
+  </div>
+  
+  
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</html>
