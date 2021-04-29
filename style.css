@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
   max-height: 100vh;
   overflow-x: hidden;
-  /* background-color: rgb(54, 58, 58); */
+  background-color: #0f1314;
 }
 
 nav {
@@ -122,9 +122,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://cdn.glitch.com/27f86ec2-5997-4dd8-80cd-b47451f12b85%2Fandrew-neel-z55CR_d0ayg-unsplash.jpg?v=1574356068241');
+  /* background-image: url('https://cdn.glitch.com/27f86ec2-5997-4dd8-80cd-b47451f12b85%2Fandrew-neel-z55CR_d0ayg-unsplash.jpg?v=1574356068241'); */
   background-position: center;
   background-size: cover;
+  z-index: -3;
+}
+
+.myVideoFilter {
+}
+
+#myVideo {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
   z-index: -2;
 }
 
@@ -135,7 +147,7 @@ nav {
   background: linear-gradient(
     to right bottom,
     rgba(121, 126, 149, 0.7),
-    rgba(121, 126, 149, 0.4)
+    rgba(74, 82, 119, 0.5)
   );
   z-index: 3;
   backdrop-filter: blur(0.6rem);
@@ -180,11 +192,12 @@ nav {
   position: absolute;
   width: 4px;
   height: 12px;
+  margin-top: 5px;
   background: #00c3ff;
   box-shadow: 0 0 5px #b1eafc, 0 0 10px #b1eafc, 0 0 20px #00c3ff;
   left: 50%;
   transform: rotate(calc(18deg * var(--i)));
-  transform-origin: 0 110px;
+  transform-origin: 0 105px;
   z-index: 15;
   opacity: 0;
 }

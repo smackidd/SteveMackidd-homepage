@@ -5,5 +5,5 @@ function openGlass() {
   gsap.to(".blocks", {opacity: 1, delay: 0.5, stagger: 0.05, repeat: 1, yoyo: true})
   gsap.to(".glassLeft", {duration: 4, x: "-100%", delay: 2, ease: "bounce"});
   gsap.to(".glassRight", {duration: 4, x: "100%", delay: 2, ease: "bounce"});
-  gsap.to(".circle1, .circle2", {duration: 3, opacity: 0, delay: 4, ease: "slow"});  
+  gsap.to(".circle1, .circle2", {duration: 1, opacity: 0, delay: 3.5, ease: "slow"});  
 }
