@@ -3,10 +3,11 @@
   --main-background-color: #0c2f68;
   --title-background-color: #1c69a5;
   --alternate-background-color: #f7d025;
+  --contact-background-color: #e61556;
 }
 
 body {
-  font-family: 'Red Hat Display', helvetica, arial, sans-serif;
+  font-family: 'Poppins', helvetica, arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -125,26 +126,36 @@ nav {
   opacity: 0;
 }
 
-.home {
+section {
   height: 100vh;
+}
+
+.home {
   display: flex;
   align-items: center;
   justify-content: center;
   /* background-image: url('https://cdn.glitch.com/27f86ec2-5997-4dd8-80cd-b47451f12b85%2Fandrew-neel-z55CR_d0ayg-unsplash.jpg?v=1574356068241'); */
   background-position: center;
   background-size: cover;
+  background: var(--main-background-color);
   z-index: -3;
 }
 
-.myVideoFilter {
+.projects {
+  display: none;
+  background-color: var(--title-background-color);
+}
+
+.contact {
+  display: none;
 }
 
 #myVideo {
-  position: fixed;
+  position: absolute;
   width: 100%;
   right: 0;
   top: 0;
-  z-index: -2;
+  z-index: 0;
 }
 
 .glass {
@@ -249,4 +260,130 @@ nav {
   transform-origin: 0 105px;
   z-index: 15;
   opacity: 0;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--alternate-background-color);
+  z-index: 1;
+}
+
+.aboutCard {
+  position: absolute;
+  background: white;
+  top: 10vh;
+  left: 15%;
+  width: 55%;
+  height: 75vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(226, 226, 233, 0.9),
+    rgba(216, 220, 235, 0.7)
+  );
+  border-radius: 3rem;
+  backdrop-filter: blur(0.3rem);
+  box-shadow: 10px 10px 20px #0f131438;
+  z-index: 0;
+}
+
+.aboutCardTitle {
+  position: absolute;
+  top: 10vh;
+  left: 15%;
+  width: 55%;
+  height: 9vh;
+  background: var(--main-background-color);
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  opacity: 3;
+}
+
+.aboutCardTitle h1 {
+  color: var(--main-txt-color);
+  margin-left: 15%;
+}
+
+.aboutCardInfo {
+  position: absolute;
+  top: 16vh;
+  left: 15%;
+  width: 55%;
+  max-height: 59vh;
+  margin: 20px;
+}
+
+.aboutCardInfo li {
+  width: 90%;
+}
+
+.photo img {
+  position: absolute;
+  width: 100%;
+  height: 98%;
+}
+
+.photo div {
+  width: 200px;
+  height: 250px;
+  box-shadow: 5px 5px 12px #0f131473;
+}
+
+.photo div:nth-child(1) {
+  position: absolute;
+  top: 61vh;
+  left: 60%;
+  background: var(--contact-background-color);
+  z-index: 14;
+}
+
+.photo div img:nth-child(1) {
+  position: absolute;
+  transform: scale(1);
+
+  z-index: 13;
+}
+
+.photo div:nth-child(2) {
+  position: absolute;
+  top: 5vh;
+  left: 2%;
+  transform: scale(0.8);
+  background: var(--contact-background-color);
+  z-index: 14;
+}
+
+.photo div img:nth-child(2) {
+  position: absolute;
+  z-index: 13;
+}
+
+.photo div:nth-child(3) {
+  position: absolute;
+  top: 65vh;
+  left: 4.5%;
+  transform: scale(0.66);
+  z-index: -14;
+}
+
+.photo div img:nth-child(3) {
+  position: absolute;
+  z-index: -13;
+}
+
+.photo div:nth-child(4) {
+  position: absolute;
+  top: 3vh;
+  left: 66%;
+  transform: scale(1.1);
+  z-index: -14;
+}
+
+.photo div img:nth-child(4) {
+  position: absolute;
+  z-index: -13;
 }
