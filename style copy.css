@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-height: 100vh;
   overflow-x: hidden;
   /* background-color: #0f1314; */
   background-color: var(--main-background-color);
@@ -127,7 +128,6 @@ nav {
 
 section {
   height: 100vh;
-  overflow-x: hidden;
 }
 
 .home {
@@ -153,15 +153,14 @@ section {
 #myVideo {
   position: absolute;
   width: 100%;
-  top: 0;
   right: 0;
+  top: 0;
   z-index: 0;
 }
 
 .glass {
   background: white;
   min-height: 100vh;
-  height: 100vh;
   width: 100%;
   background: linear-gradient(
     to right bottom,
@@ -222,8 +221,6 @@ section {
   position: absolute;
   width: 220px;
   height: 220px;
-  top: 130px;
-  left: 35px;
   background-color: #242c30;
   z-index: 9;
   border-radius: 150px;
@@ -233,8 +230,7 @@ section {
   position: absolute;
   width: 174px;
   height: 174px;
-  top: 23px;
-  left: 23px;
+
   /* top: 50%;
   left: 50%; */
   background-color: #242c30;
@@ -247,7 +243,7 @@ section {
 #clickTxt {
   position: relative;
   text-align: center;
-  top: 37px;
+  top: 45px;
   color: #00c3ff;
   text-shadow: /*0 0 5px #b1eafc, */ 0 0 10px #00c3ff;
 }
@@ -283,7 +279,6 @@ section {
   top: 10vh;
   left: 15%;
   width: 55%;
-  min-width: 350px;
   height: 75vh;
   background: linear-gradient(
     to right bottom,
@@ -291,7 +286,7 @@ section {
     rgba(216, 220, 235, 0.7)
   );
   border-radius: 3rem;
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(0.3rem);
   box-shadow: 10px 10px 20px #0f131438;
   z-index: 0;
 }
@@ -301,7 +296,6 @@ section {
   top: 10vh;
   left: 15%;
   width: 55%;
-  min-width: 350px;
   height: 9vh;
   background: var(--main-background-color);
   border-top-left-radius: 3rem;
@@ -352,7 +346,7 @@ section {
 .photo div:nth-child(1) {
   position: absolute;
   top: 61vh;
-  right: 25%;
+  left: 60%;
   background: var(--contact-background-color);
   z-index: 14;
 }
@@ -458,38 +452,4 @@ section {
   height: 15px;
   width: 57%;
   background: var(--main-background-color);
-}
-
-@media only screen and (max-width: 1300px) {
-  .photo div:nth-child(2) {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .aboutCard {
-    left: 2%;
-    width: 96%;
-    min-width: 350px;
-  }
-
-  .aboutCardTitle {
-    left: 2%;
-    width: 96%;
-    min-width: 350px;
-  }
-
-  .photo div:nth-child(3) {
-    display: none;
-  }
-
-  .photo div:nth-child(4) {
-    display: none;
-  }
-
-  .photo div:nth-child(1) {
-    top: 70vh;
-    right: 0;
-    transform: scale(0.5);
-  }
 }
