@@ -7,13 +7,17 @@
 }
 
 body {
-  font-family: 'Poppins', helvetica, arial, sans-serif;
+  font-family: 'Red Hat Display', helvetica, arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
   /* background-color: #0f1314; */
   background-color: var(--main-background-color);
+}
+
+h1 {
+  color: var(--main-txt-color);
 }
 
 nav {
@@ -141,11 +145,6 @@ section {
   z-index: -3;
 }
 
-.projects {
-  display: none;
-  background-color: var(--title-background-color);
-}
-
 .contact {
   display: none;
 }
@@ -165,11 +164,11 @@ section {
   width: 100%;
   background: linear-gradient(
     to right bottom,
-    rgba(121, 126, 149, 0.7),
-    rgba(74, 82, 119, 0.5)
+    rgba(255, 255, 255, 0.7),
+    rgba(196, 196, 196, 0.5)
   );
   z-index: 3;
-  backdrop-filter: blur(0.6rem);
+  backdrop-filter: blur(1rem);
 }
 
 .glassLeft {
@@ -466,6 +465,140 @@ section {
   }
 }
 
+/* Projects Section */
+
+.projects {
+  display: none;
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  max-height: 400vh;
+  background-color: var(--title-background-color);
+  text-align: center;
+  z-index: 1;
+}
+
+.project-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-box {
+  position: relative;
+  height: 300px;
+  width: 450px;
+  margin: 20px;
+  border-radius: 1rem;
+  background: var(--alternate-background-color);
+  box-shadow: 5px 5px 12px 5px #0f131473;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 0.5s ease;
+}
+
+.thumbnail {
+  height: 300px;
+  width: 450px;
+  z-index: -1;
+}
+
+.corner {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: -150px;
+  left: -200px;
+  transform: rotate(33deg);
+  background-color: var(--contact-background-color);
+  z-index: 5;
+}
+
+.html-css-logo {
+  position: absolute;
+  top: -170px;
+  left: -85px;
+  transform: scale(0.1) rotate(-33deg);
+}
+
+.c-sharp-logo {
+  position: absolute;
+  top: -371px;
+  left: -255px;
+  transform: scale(0.07) rotate(-33deg);
+}
+
+.react-logo {
+  position: absolute;
+  top: -360px;
+  left: -175px;
+  transform: scale(0.06) rotate(-33deg);
+}
+
+.unreal-logo {
+  position: absolute;
+  top: -315px;
+  left: -200px;
+  transform: scale(0.075) rotate(-33deg);
+}
+
+.java-background {
+  position: absolute;
+  top: 100px;
+  left: 220px;
+  height: 65px;
+  width: 65px;
+  border-radius: 1rem;
+  transform: rotate(-33deg);
+  background: var(--main-txt-color);
+}
+
+.java-logo {
+  position: absolute;
+  top: -225px;
+  left: -228px;
+  transform: scale(0.12);
+}
+
+.slider {
+  position: absolute;
+  height: 300px;
+  width: 450px;
+  top: 0;
+  left: -450px;
+  text-align: left;
+  background-color: var(--main-background-color);
+  opacity: 0.95;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.slider p {
+  color: var(--main-txt-color);
+}
+
+.slider div {
+  margin-left: 110px;
+  height: 100%;
+  width: 300px;
+  padding: 15px;
+}
+
+.project-box:hover {
+  transform: scale(1.1);
+}
+
+.project-box:hover .slider {
+  left: 0;
+  transform: scale(1.1);
+}
+
+/* Contact */
+
+.contact {
+  position: relative;
+}
+
 @media only screen and (max-width: 650px) {
   .aboutCard {
     left: 2%;
@@ -489,7 +622,35 @@ section {
 
   .photo div:nth-child(1) {
     top: 70vh;
-    right: 0;
-    transform: scale(0.5);
+    right: -40px;
+    transform: scale(0.7);
+  }
+
+  .project-box {
+    height: 250px;
+    width: 375px;
+  }
+
+  .slider {
+    height: 250px;
+    width: 375px;
+  }
+
+  .slider p {
+    font-size: 0.8em;
+  }
+
+  .slider div {
+    width: 220px;
+    padding: 0px;
+  }
+
+  .project-box:hover {
+    transform: scale(1.02);
+  }
+
+  .project-box:hover .slider {
+    left: 0;
+    transform: scale(1.02);
   }
 }
