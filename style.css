@@ -592,7 +592,7 @@ section {
 /* Contact */
 
 .contact {
-  display: none;
+  display: block;
   position: relative;
   min-height: 100vh;
   height: auto;
@@ -805,7 +805,7 @@ textarea.input {
 
 .contact-logo:nth-child(5) {
   width: 45px;
-  height: auto;
+  height: 50px;
 }
 
 .contact-java-background {
