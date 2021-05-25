@@ -145,10 +145,6 @@ section {
   z-index: -3;
 }
 
-.contact {
-  display: none;
-}
-
 #myVideo {
   position: absolute;
   width: 100%;
@@ -598,7 +594,8 @@ section {
 .contact {
   display: none;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   overflow: hidden;
 }
@@ -607,6 +604,8 @@ section {
   position: relative;
   display: flex;
   min-height: 100vh;
+  margin-top: 15px;
+  margin-bottom: 15px;
   /* padding: 2rem; */
   overflow: hidden;
   align-items: center;
@@ -789,6 +788,16 @@ textarea.input {
   margin: 5px;
 }
 
+.build p {
+  color: var(--main-txt-color);
+}
+
+.build-logo {
+  width: 30px;
+  height: 30px;
+  margin: 1px;
+}
+
 .contact-logo:nth-child(1) {
   width: 45px;
   height: 50px;
@@ -822,6 +831,11 @@ textarea.input {
   font-size: 4rem;
   margin-left: 15px;
   color: var(--alternate-background-color);
+}
+
+.resume i:hover {
+  color: var(--contact-background-color);
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 650px) {
