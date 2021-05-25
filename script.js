@@ -48,3 +48,59 @@ tlAbout.from(".aboutCardInfo", {
   //ease: "power4"
 });
 
+
+////
+// email form
+////
+var form = document.getElementById("my-form");
+    
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("my-form-status");
+  var name = document.getElementById("contact-name");
+  var email = document.getElementById("contact-email");
+  var message = document.getElementById("contact-message");
+  var data = new FormData(event.target);
+
+  if (!name || !email || !message) {
+    status.innerHTML = "Please complete all fields in the form";
+    return;
+  }
+  
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    status.innerHTML = "Thanks for your submission!";
+    form.reset()
+  }).catch(error => {
+    status.innerHTML = "Oops! There was a problem submitting your form"
+  });
+}
+form.addEventListener("submit", handleSubmit);
+
+////
+// input label move
+////
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+  
+}
+
+inputs.forEach(input => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+})
