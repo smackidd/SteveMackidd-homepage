@@ -24,9 +24,9 @@ function openGlass() {
   gsap.to(".glassRight", {duration: 4, x: "100%", delay: 2, ease: "power1"});
   gsap.to(".circle1, .circle2", {duration: 0.5, opacity: 0, delay: 2});
   gsap.to(".glass", {duration: 0.5, display: "none", opacity: 0, delay: 6});
-  gsap.to(".about", {display: "block", delay: 6.5}); 
-  gsap.to(".projects", {display: "block", delay: 6.5});
-  gsap.to(".contact", {display: "flex", delay: 6.5});
+  gsap.to(".about", {display: "block", delay: 4}); 
+  gsap.to(".projects", {display: "block", delay: 4});
+  gsap.to(".contact", {display: "flex", delay: 4});
 }
 
 

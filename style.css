@@ -7,6 +7,7 @@
 }
 
 body {
+  /* display: block; */
   font-family: 'Red Hat Display', helvetica, arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -136,6 +137,8 @@ section {
 
 .home {
   display: flex;
+  /* position: relative; */
+  /* width: 200%; */
   align-items: center;
   justify-content: center;
   /* background-image: url('https://cdn.glitch.com/27f86ec2-5997-4dd8-80cd-b47451f12b85%2Fandrew-neel-z55CR_d0ayg-unsplash.jpg?v=1574356068241'); */
@@ -154,10 +157,13 @@ section {
 }
 
 .glass {
+  position: absolute;
   background: white;
   min-height: 100vh;
   height: 100vh;
   width: 100%;
+  /* top: 0;
+  left: -100%; */
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
@@ -168,10 +174,14 @@ section {
 }
 
 .glassLeft {
+  left: -50%;
+  transform: skewX(-25deg);
+  background: var(--main-background-color);
   box-shadow: 4px 0px 10px 20px rgba(10, 10, 10, 0.5);
 }
 .glassRight {
-  box-shadow: -4px 0px -2px 15px rgba(10, 10, 10, 0.5);
+  left: 50%;
+  transform: skewX(-25deg);
 }
 
 .title {
@@ -186,7 +196,7 @@ section {
   font-style: none;
   color: var(--main-txt-color);
   letter-spacing: 5px;
-  z-index: 8;
+  z-index: 10000;
 }
 
 .title h1 {
