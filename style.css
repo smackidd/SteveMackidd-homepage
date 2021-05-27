@@ -136,11 +136,11 @@ section {
 }
 
 .home {
-  display: flex;
+  /* display: flex; */
   /* position: relative; */
   /* width: 200%; */
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   /* background-image: url('https://cdn.glitch.com/27f86ec2-5997-4dd8-80cd-b47451f12b85%2Fandrew-neel-z55CR_d0ayg-unsplash.jpg?v=1574356068241'); */
   background-position: center;
   background-size: cover;
@@ -175,28 +175,30 @@ section {
 
 .glassLeft {
   left: -50%;
-  transform: skewX(-25deg);
-  background: var(--main-background-color);
+  transform: skewX(-20deg);
+  background: var(--title-background-color);
   box-shadow: 4px 0px 10px 20px rgba(10, 10, 10, 0.5);
 }
 .glassRight {
   left: 50%;
-  transform: skewX(-25deg);
+  transform: skewX(-20deg);
 }
 
 .title {
   position: absolute;
-  width: 300px;
-  height: 400px;
-  top: 15%;
+  width: 260px;
+  height: 115px;
+  /* top: 15%; */
+  margin-left: 5%;
+  margin-top: 15%;
   background-color: var(--title-background-color);
   border-radius: 1rem;
-  box-shadow: 4px 4px 15px #0f1314;
+  /* box-shadow: 4px 4px 15px #0f1314; */
   font-family: 'Red Hat Display';
   font-style: none;
   color: var(--main-txt-color);
   letter-spacing: 5px;
-  z-index: 10000;
+  z-index: 5;
 }
 
 .title h1 {
@@ -225,21 +227,22 @@ section {
 
 .circle1 {
   position: absolute;
-  width: 220px;
-  height: 220px;
-  top: 130px;
-  left: 35px;
+  width: 110px;
+  height: 110px;
+  top: 35%;
+  left: 10%;
   background-color: #242c30;
   z-index: 9;
   border-radius: 150px;
+  z-index: 9;
 }
 
 .circle2 {
   position: absolute;
-  width: 174px;
-  height: 174px;
-  top: 23px;
-  left: 23px;
+  width: 80px;
+  height: 80px;
+  top: 15px;
+  left: 15px;
   /* top: 50%;
   left: 50%; */
   background-color: #242c30;
@@ -252,21 +255,23 @@ section {
 #clickTxt {
   position: relative;
   text-align: center;
-  top: 37px;
+  top: 20px;
+  font-size: 0.7rem;
   color: #00c3ff;
   text-shadow: /*0 0 5px #b1eafc, */ 0 0 10px #00c3ff;
 }
 
 .blocks {
   position: absolute;
-  width: 4px;
-  height: 12px;
+  width: 3px;
+  height: 3px;
+  border-radius: 1rem;
   margin-top: 5px;
   background: #00c3ff;
-  box-shadow: 0 0 5px #b1eafc, 0 0 10px #b1eafc, 0 0 20px #00c3ff;
+  box-shadow: 0 0 3px #b1eafc, 0 0 10px #b1eafc, 0 0 20px #00c3ff;
   left: 50%;
   transform: rotate(calc(18deg * var(--i)));
-  transform-origin: 0 105px;
+  transform-origin: 0 50px;
   z-index: 15;
   opacity: 0;
 }
