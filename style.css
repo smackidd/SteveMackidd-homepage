@@ -1,14 +1,14 @@
 :root {
   --main-txt-color: #f4ebec;
   --main-background-color: #0c2f68;
-  --title-background-color: #1c69a5;
+  --title-background-color: rgb(28, 105, 165);
   --alternate-background-color: #f7d025;
   --contact-background-color: #e61556;
 }
 
 body {
   /* display: block; */
-  font-family: 'Red Hat Display', helvetica, arial, sans-serif;
+  font-family: 'Roboto', helvetica, arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -184,24 +184,34 @@ section {
   transform: skewX(-20deg);
 }
 
+.title-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 15%;
+  width: 50%;
+  max-height: 100vh;
+}
+
 .title {
   position: absolute;
   width: 260px;
   height: 115px;
   /* top: 15%; */
-  margin-left: 5%;
-  margin-top: 15%;
-  background-color: var(--title-background-color);
+
+  background-color: rgba(28, 105, 165, 0);
   border-radius: 1rem;
   /* box-shadow: 4px 4px 15px #0f1314; */
   font-family: 'Red Hat Display';
   font-style: none;
   color: var(--main-txt-color);
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   z-index: 5;
 }
 
 .title h1 {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
@@ -226,11 +236,12 @@ section {
 }
 
 .circle1 {
-  position: absolute;
+  position: relative;
   width: 110px;
   height: 110px;
-  top: 35%;
-  left: 10%;
+  margin-top: 175px;
+  /* top: 40%;
+  left: 11%; */
   background-color: #242c30;
   z-index: 9;
   border-radius: 150px;

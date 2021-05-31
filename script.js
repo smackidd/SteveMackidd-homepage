@@ -17,7 +17,7 @@ const tlAbout = gsap.timeline({
 function openGlass() {
   gsap.to(".circle2", {boxShadow: "inset 8px 8px 21px #1f2529, inset -8px -8px 21px #293337"});
   gsap.to(".blocks", {opacity: 1, delay: 0.5, stagger: 0.02});
-  gsap.to(".title", {duration: 1, height: "115px", delay: 1, ease: "power1.inOut"});
+  gsap.to(".title", {duration: 1, height: "115px", backgroundColor: "rgba(28, 105, 165, 1)", delay: 1, ease: "power1.inOut"});
   gsap.to(".title", {duration: 1.5, rotate: "90deg", right: "-140px", boxShadow: "4px 4px 8px #0f1314", position: "fixed", delay: 2, ease: "power1.inOut"});
   gsap.to("i", {duration: 1.5, rotate: "-90deg", delay: 2.5, ease: "bounce"});
   gsap.to(".glassLeft", {duration: 4, x: "-100%", delay: 1, ease: "power1"});
