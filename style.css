@@ -177,7 +177,7 @@ section {
   left: -50%;
   transform: skewX(-20deg);
   background: var(--title-background-color);
-  box-shadow: 4px 0px 10px 20px rgba(10, 10, 10, 0.5);
+  /* box-shadow: 4px 0px 10px 20px rgba(10, 10, 10, 0.5); */
 }
 .glassRight {
   left: 50%;
@@ -917,6 +917,10 @@ textarea.input {
   .project-box:hover .slider {
     left: 0;
     transform: scale(1.02);
+  }
+
+  .title h1 {
+    font-size: 1.2rem;
   }
 }
 
