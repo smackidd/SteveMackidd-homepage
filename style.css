@@ -8,7 +8,8 @@
 
 body {
   /* display: block; */
-  font-family: 'Roboto', helvetica, arial, sans-serif;
+  font-family: 'Oswald', helvetica, arial, sans-serif;
+  letter-spacing: 2px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -211,7 +212,7 @@ section {
 }
 
 .title h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
 }
 
