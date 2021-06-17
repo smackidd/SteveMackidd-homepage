@@ -8,7 +8,8 @@
 
 body {
   /* display: block; */
-  font-family: 'Roboto', helvetica, arial, sans-serif;
+  font-family: 'Oswald', helvetica, arial, sans-serif;
+  letter-spacing: 2px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -148,9 +149,15 @@ section {
   z-index: -3;
 }
 
+#myVideoFilter {
+  position: relative;
+}
+
 #myVideo {
   position: absolute;
   width: 100%;
+  min-height: 50vh;
+  max-height: 100vh;
   top: 0;
   right: 0;
   z-index: 0;
@@ -177,7 +184,7 @@ section {
   left: -50%;
   transform: skewX(-20deg);
   background: var(--title-background-color);
-  box-shadow: 4px 0px 10px 20px rgba(10, 10, 10, 0.5);
+  /* box-shadow: 4px 0px 10px 20px rgba(10, 10, 10, 0.5); */
 }
 .glassRight {
   left: 50%;
@@ -211,7 +218,7 @@ section {
 }
 
 .title h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
 }
 
@@ -431,6 +438,10 @@ section {
   z-index: -15;
 }
 
+.home .aboutLines div {
+  z-index: 0;
+}
+
 .aboutLines div:nth-child(odd) {
   left: 3.5%;
 }
@@ -510,10 +521,10 @@ section {
   position: relative;
   height: 300px;
   width: 450px;
-  margin: 20px;
-  border-radius: 1rem;
+  margin: 10px;
+  /* border-radius: 1rem; */
   background: var(--alternate-background-color);
-  box-shadow: 5px 5px 12px 5px #0f131473;
+  /* box-shadow: 5px 5px 12px 5px #0f131473; */
   overflow-x: hidden;
   overflow-y: hidden;
   transition: 0.5s ease;
@@ -917,6 +928,10 @@ textarea.input {
   .project-box:hover .slider {
     left: 0;
     transform: scale(1.02);
+  }
+
+  .title h1 {
+    font-size: 1.2rem;
   }
 }
 
