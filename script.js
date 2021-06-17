@@ -20,10 +20,10 @@ function openGlass() {
   gsap.to(".title", {duration: 1, height: "115px", backgroundColor: "rgba(28, 105, 165, 1)", delay: 1, ease: "power1.inOut"});
   gsap.to(".title", {duration: 1.5, rotate: "90deg", right: "-140px", boxShadow: "4px 4px 8px #0f1314", position: "fixed", delay: 2, ease: "power1.inOut"});
   gsap.to("i", {duration: 1.5, rotate: "-90deg", delay: 2.5, ease: "bounce"});
-  gsap.to(".glassLeft", {duration: 4, x: "-100%", delay: 1, ease: "power1"});
-  gsap.to(".glassRight", {duration: 4, x: "100%", delay: 1, ease: "power1"});
-  gsap.to(".circle1, .circle2", {duration: 1, opacity: 0, delay: 1.3});
-  gsap.to(".glass", {duration: 0.5, display: "none", opacity: 0, delay: 5});
+  gsap.to(".glassLeft", {duration: 4, x: "-100%", delay: 1, ease: "power1.inOut"});
+  gsap.to(".glassRight", {duration: 4, x: "100%", delay: 1, ease: "power1.inOut"});
+  gsap.to(".circle1, .circle2", {duration: 0.25, opacity: 0, delay: 1.15});
+  gsap.to(".glass", {display: "none", opacity: 0, delay: 5});
   gsap.to(".about", {display: "block", delay: 3}); 
   gsap.to(".projects", {display: "block", delay: 3});
   gsap.to(".contact", {display: "flex", delay: 3});

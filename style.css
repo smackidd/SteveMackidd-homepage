@@ -149,9 +149,15 @@ section {
   z-index: -3;
 }
 
+#myVideoFilter {
+  position: relative;
+}
+
 #myVideo {
   position: absolute;
   width: 100%;
+  min-height: 50vh;
+  max-height: 100vh;
   top: 0;
   right: 0;
   z-index: 0;
@@ -432,6 +438,10 @@ section {
   z-index: -15;
 }
 
+.home .aboutLines div {
+  z-index: 0;
+}
+
 .aboutLines div:nth-child(odd) {
   left: 3.5%;
 }
@@ -511,10 +521,10 @@ section {
   position: relative;
   height: 300px;
   width: 450px;
-  margin: 20px;
-  border-radius: 1rem;
+  margin: 10px;
+  /* border-radius: 1rem; */
   background: var(--alternate-background-color);
-  box-shadow: 5px 5px 12px 5px #0f131473;
+  /* box-shadow: 5px 5px 12px 5px #0f131473; */
   overflow-x: hidden;
   overflow-y: hidden;
   transition: 0.5s ease;
