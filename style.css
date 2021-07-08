@@ -439,7 +439,7 @@ section {
 }
 
 .home .aboutLines div {
-  z-index: 0;
+  z-index: -1;
 }
 
 .aboutLines div:nth-child(odd) {
