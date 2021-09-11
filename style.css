@@ -21,6 +21,15 @@ p {
   margin-bottom: 1em;
 }
 
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 h1 {
   font-family: 'Quicksand';
   font-weight: 300;
