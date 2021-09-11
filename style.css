@@ -662,6 +662,10 @@ textarea.input {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .menu-bar h2 {
     font-size: 2em;
   }
@@ -731,7 +735,7 @@ textarea.input {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   body {
     overflow-x: hidden;
   }
