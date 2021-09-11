@@ -1,274 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Steve Mackidd Homepage</title>
   <script src="https://kit.fontawesome.com/3e667ca837.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum|Fredoka+One|Heebo:900|Patua+One|Red+Hat+Display|Ubuntu:700|Calistoga&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Stephen Mackidd Portfolio Website</title>
 </head>
+
 <body>
-  <!-- <nav>
-    <div class="title">
-      <h1>Stephen Mackidd</h1>
+  <header class="bg-dark-gradient">
+    <div id="menu-bar" class="menu-bar">
+      <h2>Stephen Mackidd</h2>
+      <ul class="navbar">
+        <li>
+          <a href="#about-section">about</a>
+          <div class="btn-menu-links-hover-bar"></div>
+        </li>
+        <li>
+          <a href="#projects-section">project</a>
+          <div class="btn-menu-links-hover-bar"></div>
+        </li>
+        <li>
+          <a href="#contact-section">contact</a>
+          <div class="btn-menu-links-hover-bar"></div>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>  
+        <div class="line3"></div>
+      </div>
     </div>
-    <ul class="navbar">
-      <li><a href="index.html">home</a></li>
-      <li><a href="/public/about.html">about</a></li>
-      <li><a href="/public/experience.html">experience</a></li>
-      <li><a href="/public/blog.html">blog</a></li>
-    </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>  
-      <div class="line3"></div>
-    </div>
-    
-  </nav> -->
-  <section class="home">
-    <div class="myVideoFilter">
-      <video autoplay muted loop playsinline id="myVideo">
-        <source src="assets/Homepage Video 2.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="glass glassLeft">
-      
-    </div>
-    <div class="glass glassRight"></div>
-    <div class="title-button">
-      <div class="title">
-        <h1>STEPHEN MACKIDD</h1>
-        <div class="icons">
-          <a href="https://www.linkedin.com/in/stephen-mackidd-6a1572106/" target="_blank">
-            <i class="fab fa-linkedin" ></i>
+    <div class="landing-page container">
+      <div class="landing-page-column">
+        <h1>Software Developer</h1>
+        <div class="landing-buttons">
+          <a href="#projects-section">
+            <button class="btn-call btn-primary">Projects</button>
           </a>
-          <a href="https://github.com/smackidd" target="_blank"> 
-            <i class="fab fa-github" ></i> 
-          </a>
-          <a href="https://twitter.com/stevemackidd" target="_blank">
-            <i class="fab fa-twitter-square" ></i>
+          <a href="#contact-section">
+            <button class="btn-call btn-accent">Contact</button>
           </a>
         </div>
       </div>
-      <div class="circle1">
-        <div class="blocks" style="--i:1;"></div>
-        <div class="blocks" style="--i:2;"></div>
-        <div class="blocks" style="--i:3;"></div>
-        <div class="blocks" style="--i:4;"></div>
-        <div class="blocks" style="--i:5;"></div>
-        <div class="blocks" style="--i:6;"></div>
-        <div class="blocks" style="--i:7;"></div>
-        <div class="blocks" style="--i:8;"></div>
-        <div class="blocks" style="--i:9;"></div>
-        <div class="blocks" style="--i:10;"></div>
-        <div class="blocks" style="--i:11;"></div>
-        <div class="blocks" style="--i:12;"></div>
-        <div class="blocks" style="--i:13;"></div>
-        <div class="blocks" style="--i:14;"></div>
-        <div class="blocks" style="--i:15;"></div>
-        <div class="blocks" style="--i:16;"></div>
-        <div class="blocks" style="--i:17;"></div>
-        <div class="blocks" style="--i:18;"></div>
-        <div class="blocks" style="--i:19;"></div>
-        <div class="blocks" style="--i:20;"></div>
-        <div class="circle2" onclick=openGlass()>
-          <h2 id="clickTxt">Click to Open</h2>
-        </div>    
+      <div class="landing-page-column">
+        <img class="circle" src="/assets/IMG_1609.jpg" alt="">
       </div>
     </div>
-    <div class="aboutLines">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+  </header>
+
+  <!-- About -->
+
+  <section id="about-section" class="bg-white">
+    <div class="container">
+      <div class="split">
+        <div>
+          <img src="/assets/IMG_1610.jpg" alt="" id="about-circle" class="circle">
+        </div>
+        <div class="card-col">
+          <div class="card">
+            <div class="card-header">
+              <h2>About Me</h2>
+            </div>
+            <div class="card-body">
+              <p>I am a Software Development Diploma Graduate from Bow Valley College in Calgary, AB. My passion in software development is in web development, particularly with the React framework.</p>
+              <p>I have had great success in my previous career as a Seismic Data Technologist in the Oil & Gas Industry. I worked with big data, machine language, database management and algorithmic workflows. The transition to Software Development was natural.</p>
+              <p>I have also worked in sound design and composition while volunteering at Loose Moose Theatre. I worked there as an operator / improvisor / designer. My passion with music steered me towards a side profession of DJaying.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
+
   </section>
 
-  <!-- About Me Section -->
-  <section class="about">
-    <div class="aboutCard">
-      <div class="aboutCardInfo">
-        <h3>I am a Software Developer</h3>
-          <ul>
-            <li>Graduate of a 2 year diploma program in Software Development at Bow Valley College in Calgary</li>
-          </ul>
-        <h3>I am a Geophysical Technologist</h3>
-          <ul>
-            <li>20 years experience in the Oil & Gas Industry</li>
-            <li>Machine Language Input/Output & Database Management</li>
-          </ul>
-        <h3>I am a Sound Designer</h3>
-          <ul>
-            <li>25 years Sound Operation/Improvisation/Design at Loosemoose Theatre</li>
-          </ul>
-        <h3>I am a DJ</h3>
-          <ul>
-            <li>Find me at <a href = "http://funhousedjservices.com">funhousedjservices.com</a></li>
-          </ul>
-        <h3>I am a Video Content Creator</h3>
-          <ul>
-            <li>Find me at <a href = "http://youtube.com/channel/UCzkfguLIRH81gCwbed1RlVw">Funhouse Film Reviews</a></li>
-          </ul>
-      </div>
-    </div>
-    <div class="aboutCardTitle"><h1>ABOUT ME</h1></div>
+  <!-- Projects -->
+  
+  <section id="projects-section" class="bg-secondary">
     
-    <!-- Photos -->
-    <div class="photo">
-      <div>
-        <img src="assets/Photos/IMG_1593_2.jpg" alt="profile1">
-      </div>
-      <div>
-        <img src="assets/Photos/IMG_1598.jpg" alt="profile2">  
-      </div> 
-      <div>
-        <img src="assets/Photos/IMG_1609.jpg" alt="profile2">  
-      </div> 
-      <div>
-        <img src="assets/Photos/IMG_1608.jpg" alt="profile2">  
+    <div class="container">
+      <div class="title-bar">
+        <h2>Projects</h2>
       </div>  
-    </div>
-    <!-- Lines -->
-    <div class="aboutLines">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    
-  </section>
-  <section class="projects">
-    <h1>PROJECTS</h1>
-    <div class="project-boxes">
-
-      <div class="project-box">
-        <img class="thumbnail" src="assets/Photos/Sharespace.jpg" alt="Sharespace Project">
-        <div class="corner">
+      <div class="projects">
+        <div class="project-box">
+          <img class="thumbnail" src="assets/Photos/Sharespace.jpg" alt="Sharespace Project">
           <img class="logo html-css-logo" src="assets/Photos/HTML-CSS-Javascript.png" alt="HTML-CSS logos">
-        </div>
-        <a href="https://github.com/smackidd/ShareSpace" target="_blank">
-          <div class="slider">
-            <div>
-              <h1>Sharespace</h1>
-              <br/>
-              <p>Sharespace is a fictional website that allows property owners to list spaces for rent. Based on Neumorphic design principles.</p>
-            </div>
+          <div class="corner">
           </div>
-        </a>  
-      </div>
-
-      <div class="project-box">
-        <img class="thumbnail" src="assets/Photos/crazy8s.jpg" alt="Crazy8s Project">
-        <div class="corner">
+          <a href="https://github.com/smackidd/ShareSpace" target="_blank">
+            <div class="slider">
+              <div class="slider-content">
+                <h1>Sharespace</h1>
+                <br/>
+                <p>Sharespace is a fictional website that allows property owners to list spaces for rent. Based on Neumorphic design principles.</p>
+              </div>
+            </div>
+          </a>  
+        </div> 
+        
+        <div class="project-box">
+          <img class="thumbnail" src="assets/Photos/crazy8s.jpg" alt="Crazy8s Project">
           <img class="logo c-sharp-logo" src="assets/Photos/c-sharp.png" alt="C Sharp logo">
-        </div> 
-        <a href="https://github.com/bradkillins/CrazyEights" target="_blank">
-          <div class="slider">
-            <div>
-              <h1>Crazy 8s</h1>
-              <br/>
-              <p>A simple crazy 8s game, single player against the computer. The AI determines an array of possible moves and chooses a random index from that array.</p>
+          <div class="corner">
+          </div> 
+          <a href="https://github.com/bradkillins/CrazyEights" target="_blank">
+            <div class="slider">
+              <div class="slider-content">
+                <h1>Crazy 8s</h1>
+                <br/>
+                <p>A simple crazy 8s game, single player against the computer. The AI determines an array of possible moves and chooses a random index from that array.</p>
+              </div>
             </div>
-          </div>
-        </a> 
-      </div>
-
-      <div class="project-box">
-        <img class="thumbnail" src="assets/Photos/Spotonify.jpg" alt="Spotonify Project">
-        <div class="corner">
+          </a> 
+        </div>
+  
+        <div class="project-box">
+          <img class="thumbnail" src="assets/Photos/Spotonify.jpg" alt="Spotonify Project">
           <img class="logo react-logo" src="assets/Photos/React.png" alt="React logo">
-        </div> 
-        <a href="https://github.com/smackidd/SpotOn" target="_blank">
-          <div class="slider">
-            <div>
-              <h1>Spot-on-ify</h1>
-              <br/>
-              <p>A Spotify playlist generator that takes in criteria from the user and spits out a new playlist. It also can control playback on whatever device the user is listening to Spotify on.</p>
+          <div class="corner">
+          </div> 
+          <a href="https://github.com/smackidd/SpotOn" target="_blank">
+            <div class="slider">
+              <div class="slider-content">
+                <h1>Spot-on-ify</h1>
+                <br/>
+                <p>A Spotify playlist generator that takes in criteria from the user and spits out a new playlist. It also can control playback on whatever device the user is listening to Spotify on.</p>
+              </div>
             </div>
-          </div>
-        </a> 
-        
-      </div>
-        
-      <div class="project-box">
-        <img class="thumbnail" src="assets/Photos/PacMan.png" alt="PacMan Project">
-        <div class="corner">
+          </a> 
+          
+        </div>
+          
+        <div class="project-box">
+          <img class="thumbnail" src="assets/Photos/PacMan.png" alt="PacMan Project">
           <img class="logo unreal-logo" src="assets/Photos/Unreal.png" alt="Unreal logo">
-        </div> 
-        <a href="https://github.com/smackidd/PacMan-4.26" target="_blank">
-          <div class="slider">
-            <div>
-              <h1>Pac Man 3D</h1>
-              <br/>
-              <p>It's Pac Man, but 3D. Built in 3 weeks for my Games and Simulation Course. The ghost AI is simple but all assets and sound were designed by me.</p>
+          <div class="corner">
+          </div> 
+          <a href="https://github.com/smackidd/PacMan-4.26" target="_blank">
+            <div class="slider">
+              <div class="slider-content">
+                <h1>Pac Man 3D</h1>
+                <br/>
+                <p>It's Pac Man, but 3D. Built in 3 weeks for my Games and Simulation Course. The ghost AI is simple but all assets and sound were designed by me.</p>
+              </div>
             </div>
-          </div>
-        </a> 
-      </div>
-
-      <div class="project-box">
-        <img class="thumbnail" src="assets/Photos/Zombies.jpg" alt="Zombies Project">
-        <div class="corner">
+          </a> 
+        </div>
+  
+        <div class="project-box">
+          <img class="thumbnail" src="assets/Photos/Zombies.jpg" alt="Zombies Project">
           <img class="logo unreal-logo" src="assets/Photos/Unreal.png" alt="Unreal logo">
-        </div> 
-        <a href="https://github.com/smackidd/TargetPractice" target="_blank">
-          <div class="slider">
-            <div>
-              <h1>Zombie Target Practice</h1>
-              <br/>
-              <p>In our Games and Simulation course we were tasked to build a simple target practice level. I built a zombie shooter. I composed all the music and my kids supplied the voices of the zombies.</p>
+          <div class="corner">
+          </div> 
+          <a href="https://github.com/smackidd/TargetPractice" target="_blank">
+            <div class="slider">
+              <div class="slider-content"> 
+                <h1>Zombie Targets </h1>
+                <br/>
+                <p>In our Games and Simulation course we were tasked to build a simple target practice level. I built a zombie shooter. I composed all the music and my kids supplied the voices of the zombies.</p>
+              </div>
             </div>
-          </div>
-        </a> 
-      </div>
-
-      <div class="project-box">
-        <img class="thumbnail" src="assets/Photos/LinkedList.jpg" alt="LinkedList Project">
-        <div class="corner">
+          </a> 
+        </div>
+  
+        <div class="project-box">
+          <img class="thumbnail" src="assets/Photos/LinkedList.jpg" alt="LinkedList Project">
           <div class="java-background">
             <img class="logo java-logo" src="assets/Photos/Java.png" alt="Unreal logo">
           </div>
-        </div> 
-        <a href="https://github.com/smackidd/DataStructureLinkedList" target="_blank">
-          <div class="slider">
-            <div>
-              <h1>Linked List Data Structure</h1>
-              <br/>
-              <p>An example of a Linked List data structure in Java.</p>
+          <div class="corner">
+          </div> 
+          <a href="https://github.com/smackidd/DataStructureLinkedList" target="_blank">
+            <div class="slider">
+              <div class="slider-content">
+                <h1>Linked List Data Structure</h1>
+                <br/>
+                <p>An example of a Linked List data structure in Java.</p>
+              </div>
             </div>
-          </div>
-        </a> 
+          </a> 
+        </div>
       </div>
     </div>
-    <!-- Lines -->
-    <div class="aboutLines">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
   </section>
-  <section class="contact">
 
-    <div class="container-form">
+  <!-- Contact -->
+
+  <section id="contact-section" class="bg-primary">
+    <div class="container">
       <div class="form">
         <div class="contact-info">
-          <h1 class="contact-me">Stephen Mackidd</h1>
+          <h1 >Stephen Mackidd</h1>
           <div class="contact-logos">
             <img class="contact-logo" src="assets/Photos/cplus-logo.png" alt="C PlusPlus logo">
             <img class="contact-logo" src="assets/Photos/c-sharp.png" alt="C Sharp logo">
@@ -297,10 +229,8 @@
             <p>This site built with:</p>
             <div>
               <img class="build-logo" src="assets/Photos/HTML-CSS-Javascript.png" alt="HTML-CSS logos">
-              <img class="build-logo" src="assets/Photos/gsap logo.png" alt="GSAP logo">
             </div>
             
-            <p>copyright, Steve Mackidd 05/2021</p>
           </div>
         </div>
         <div class="contact-form">
@@ -321,34 +251,24 @@
               <textarea class="input" id="contact-message" type="text" name="message"></textarea>
               <label>Message</label>
               <span>Message</span>
-            </div>  
-              <button id="my-form-button">Submit</button>
+            </div> 
+            <div class="input-container">
+              <button id="my-form-button" class="btn-call btn-primary">Submit</button>
+            </div> 
               <p id="my-form-status"></p>
             
           </form>
         </div>
       </div>
     </div>
-    
-    
-
-    
-    <!-- Lines -->
-    <div class="aboutLines">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
   </section>
-  
-  
-  
+
+  <!-- Footer -->
+
+  <Footer class="bg-footer">
+
+  </Footer>
+  <script src="/index.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-<script src="script.js"></script>
+
 </html>
