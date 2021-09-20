@@ -16,6 +16,29 @@ window.onscroll = function () {
 };
 
 /////
+//landing page fade in
+/////
+
+//fade in the boxes in experience.html
+// const landingPageFadeIn = ()=>{
+  
+//   const content = document.querySelectorAll('.landing-page-column');
+  
+  
+//   window.addEventListener('load', () => {
+    
+//     //animate boxes
+//     content.forEach((content, index) => {
+      
+//       content.style.animation = `boxFadeIn 2.0s ease forwards`;
+//       content.style.display = `initial`;
+//     });
+    
+    
+//   });
+// }
+
+/////
 //Email Form
 /////
 

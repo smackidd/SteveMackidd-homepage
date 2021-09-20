@@ -243,10 +243,30 @@ a:visited {
   transform: scale(1.5);
 }
 
+@keyframes fadeIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.landing-page-container {
+  display: relative;
+}
+
 .landing-page-column {
+  display: absolute;
   margin-inline: 64px;
   margin-bottom: 4rem;
   text-align: center;
+
+  animation-name: fadeIn;
+  animation-duration: 3s;
 }
 
 .landing-buttons {
@@ -680,7 +700,17 @@ textarea.input {
   }
 
   .circle {
-    margin-top: 5rem;
+    margin-top: 1rem;
+    transform: scale(0.85);
+  }
+
+  .landing-page-column {
+    margin-bottom: 1rem;
+  }
+
+  .landing-buttons {
+    display: flex;
+    flex-direction: column;
   }
 }
 
