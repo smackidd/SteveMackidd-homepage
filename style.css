@@ -570,6 +570,7 @@ textarea.input {
   /* position: absolute;
   left: 0; */
   transform: scale(0.7);
+  box-shadow: 3px 3px 8px 3px rgba(39, 39, 39, 0.219);
 }
 
 .input-container span {
